@@ -1,0 +1,27 @@
+/* подключение шрифта на страницу */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* общие стили задаем */ 
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* ограничивает ширину элементов, по сайту смотрим значение. внутренние отступы до краев низа экрана гаджета - 940 + 15 + 15 = 970 */
+
+.container {
+    max-width: 970px;
+    padding: 0-15px;
+    margin: 0 auto;
+}
+
+/* указываем множитель - высота строки 25px / шрифт 14 = 1.78 ... при изменении шрифта будет увеличиваться на 1.79 высота строки */
+
+p {
+    color: #6A859C;
+    line-height: 1.79;
+}
